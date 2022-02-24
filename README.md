@@ -8,7 +8,7 @@ The dataset can be download from [here](https://mega.nz/file/MgVhQSoS#kOcuJFezOw
 
 ## Train
 ```
-python train.py --img 640 --batch 16 --epochs 3 --data coco128.yaml --weights yolov5s.pt --workers 1
+python train.py --img 640 --batch 16 --epochs 3 --data coco128.yaml --weights yolov5s.pt --workers 0
 ```
 ## Inference
 ```
