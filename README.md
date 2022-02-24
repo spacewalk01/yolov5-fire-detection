@@ -13,3 +13,4 @@ python detect.py --source E:/Research/Project2/fire/input/14.mp4 --weights E:\Pr
 ## Reference
 
 https://github.com/robmarkcole/fire-detection-from-images
+https://github.com/ultralytics/yolov5
