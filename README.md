@@ -34,4 +34,4 @@ python detect.py --source input.mp4 --weights E:\Programs\yolov5\runs\train\exp\
 ## Reference
 
 * https://github.com/robmarkcole/fire-detection-from-images
-* https://github.com/ultralytics/yolov5 - thanks to the simplicity.
+* https://github.com/ultralytics/yolov5
