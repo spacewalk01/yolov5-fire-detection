@@ -13,6 +13,9 @@ python detect.py --source E:/Research/Project2/fire/input/14.mp4 --weights E:\Pr
 
 # Result
 
+![](results/val_batch2_labels.jpg)
+![](results/val_batch2_pred.jpg)
+
 
 ## Reference
 
