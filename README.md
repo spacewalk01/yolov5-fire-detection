@@ -5,20 +5,22 @@ In this repo, I trained yolov5 model to identify fire from images and videos. It
   <img src="results/result.gif" />
 </p>
 
-## Dataset
+## Requirement
+
+### Dataset
 The dataset can be download from [here](https://mega.nz/file/MgVhQSoS#kOcuJFezOwU_9F46GZ1KJnX1STNny-tlD5oaJ9Hv0gY). It contains subsamples from Kaggle fire dataset and FireNet datasets.
 
 
-## Train
+### Train
 ```
 python train.py --img 640 --batch 16 --epochs 3 --data fire_config.yaml --weights yolov5s.pt --workers 0
 ```
-## Inference
+### Inference
 ```
 python detect.py --source input.mp4 --weights E:\Programs\yolov5\runs\train\exp\weights\best.pt
 ```
 
-# Result
+## Result
 
 | Ground Truth | 
 | :-: |
