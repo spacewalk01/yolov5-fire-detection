@@ -1,5 +1,7 @@
 # Yolov5 for Fire Detection
 
+![](results/result.gif)
+
 ## Dataset
 The dataset can be download from [here](https://mega.nz/file/MgVhQSoS#kOcuJFezOwU_9F46GZ1KJnX1STNny-tlD5oaJ9Hv0gY). It contains subsamples from Kaggle fire dataset and FireNet datasets.
 
