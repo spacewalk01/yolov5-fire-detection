@@ -1,4 +1,5 @@
 # Yolov5 for Fire Detection
+In this repo, I trained yolov5 model to identify fire from images and videos. It borrows and modifies the script from yolov5 repo for training the model on fire dataset.
 
 <p align="center">
   <img src="results/result.gif" />
@@ -30,4 +31,4 @@ python detect.py --source input.mp4 --weights E:\Programs\yolov5\runs\train\exp\
 ## Reference
 
 * https://github.com/robmarkcole/fire-detection-from-images
-* https://github.com/ultralytics/yolov5
+* https://github.com/ultralytics/yolov5 - thanks to the simplicity.
