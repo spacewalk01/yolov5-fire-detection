@@ -17,9 +17,11 @@ python detect.py --source E:/Research/Project2/fire/input/14.mp4 --weights E:\Pr
 
 # Result
 
-| Ground Truth | **Prediction** | 
-| :-: | :-: | 
-| ![](results/val_batch2_labels.jpg) | ![](results/val_batch2_pred.jpg) | 
+| Ground Truth | 
+| :-: |
+| ![](results/val_batch2_labels.jpg) |
+| **Prediction** | 
+| ![](results/val_batch2_pred.jpg) | 
 
 
 
