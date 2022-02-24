@@ -16,14 +16,6 @@ python detect.py --source E:/Research/Project2/fire/input/14.mp4 --weights E:\Pr
 ```
 
 # Result
-```
-path: ../datasets/fire  # dataset root dir
-train: train/images  # train images 
-val: val/images  # val images
-test:  # test images (optional)
-nc: 1  # number of classes
-names: ['fire']  # class names
-```
 
 | Ground Truth | **Prediction** | 
 | :-: | :-: | 
