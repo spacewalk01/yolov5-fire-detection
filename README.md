@@ -10,3 +10,6 @@ python train.py --img 640 --batch 16 --epochs 3 --data coco128.yaml --weights yo
 ```
 python detect.py --source E:/Research/Project2/fire/input/14.mp4 --weights E:\Programs\yolov5\runs\train\exp10\weights\best.pt
 ```
+## Reference
+
+https://github.com/robmarkcole/fire-detection-from-images
