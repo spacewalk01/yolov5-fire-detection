@@ -30,7 +30,7 @@ python detect.py --source input.mp4 --weights runs\train\exp\weights\best.pt
 | :-: | :-: | :-: |
 | ![](results/P_curve.png) | ![](results/PR_curve.png) | ![](results/R_curve.png) |
 
-I noticed that red emergency light was being detected as fire which makes sense because it is hard to differentiate emergence light and fire light. The current dataset also contains only a few hundreds of negative samples and images with car red light. I assume that we can further improve the performance by adding images with non-labeled objects as negative samples.
+I noticed that red emergency light was being detected as fire which makes sense because it is hard to differentiate emergency and fire lights. The current dataset also contains only a few hundreds of negative samples and images with car red light. I presume that we can further improve the performance by adding images with non-labeled objects as negative samples. 
 
 | Ground Truth | 
 | :-: |
@@ -39,6 +39,6 @@ I noticed that red emergency light was being detected as fire which makes sense 
 | ![](results/val_batch2_pred.jpg) | 
 
 ## Reference
-
+For more information on training yolov5, please refer to its official homage page.
 * https://github.com/robmarkcole/fire-detection-from-images
-* https://github.com/ultralytics/yolov5 - for more information on training yolov5, please refer to its official homage page
+* https://github.com/ultralytics/yolov5
