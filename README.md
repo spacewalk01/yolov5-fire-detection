@@ -17,11 +17,11 @@ pip install -r requirements.txt  # install
 Use [train.ipynb](train.ipynb) or the following commands for training & inference.
 * Train
 ```
-python train.py --img 640 --batch 16 --epochs 3 --data fire_config.yaml --weights yolov5s.pt --workers 0
+python train.py --img 640 --batch 16 --epochs 3 --data ../fire_config.yaml --weights yolov5s.pt --workers 0
 ```
 * Inference
 ```
-python detect.py --source input.mp4 --weights runs\train\exp\weights\best.pt
+python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt
 ```
 
 ## Result
