@@ -49,11 +49,11 @@ I noticed that red emergency light on top of police car was being detected as fi
 
 #### Feature Map Visualization
 
-| Input | Feature Map | 
+| Input | Feature Maps | 
 | :-: | :-: |
 | ![](results/004dec94c5de631f.jpg) | ![](results/stage23_C3_features.png) |
 
 ## Reference
-For more information on training yolov5, please refer to its official homage page.
+For more information on training yolov5, please refer to its official homepage.
 * https://github.com/robmarkcole/fire-detection-from-images
 * https://github.com/ultralytics/yolov5
