@@ -26,6 +26,10 @@ python train.py --img 640 --batch 16 --epochs 3 --data ../fire_config.yaml --wei
 ```
 python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --conf 0.2
 ```
+* Visualize feature maps
+```
+!python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.25 --source ../datasets/fire/val/images/0.jpg --visualize
+```
 
 ## Result
 
