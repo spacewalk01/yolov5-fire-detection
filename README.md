@@ -30,7 +30,7 @@ python detect.py --source input.mp4 --weights runs\train\exp\weights\best.pt
 | :-: | :-: | :-: |
 | ![](results/P_curve.png) | ![](results/PR_curve.png) | ![](results/R_curve.png) |
 
-I noticed that red emergency light was being detected as fire which makes sense because it is hard to differentiate emergency and fire lights. The current dataset also contains only a few hundreds of negative samples and images with car red light. I presume that we can further improve the performance by adding images with non-labeled objects as negative samples. It is also recommended to use as many images of [negative samples](https://github.com/AlexeyAB/darknet) as there are images with objects.
+I noticed that red emergency light was being detected as fire which makes sense because it is hard to differentiate emergency and fire lights. The current dataset also contains only a few hundreds of negative samples and images with car red light. I presume that we can further improve the performance by adding images with non-labeled fire objects as negative samples. It is also recommended to use as many images of [negative samples](https://github.com/AlexeyAB/darknet) as there are images with objects.
 
 | Ground Truth | 
 | :-: |
