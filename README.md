@@ -39,11 +39,19 @@ python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --c
 
 I noticed that red emergency light on top of police car was being detected as fire. The current dataset also contains only a few hundreds of negative samples. I presume that we can further improve the performance by adding images with non-labeled fire objects as negative samples. It is also recommended to use as many images of [negative samples](https://github.com/AlexeyAB/darknet) as there are images with objects.
 
+### Prediction Result
+
 | Ground Truth | 
 | :-: |
 | ![](results/val_batch2_labels.jpg) |
 | **Prediction** | 
 | ![](results/val_batch2_pred.jpg) | 
+
+### Feature Map Visualization
+
+| Input | Feature Map | 
+| :-: | :-: |
+| ![](results/004dec94c5de631f.jpg) | ![](results/stage23_C3_features.png) |
 
 ## Reference
 For more information on training yolov5, please refer to its official homage page.
