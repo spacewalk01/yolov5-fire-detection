@@ -6,10 +6,7 @@ In this repo, I trained yolov5 model to identify fire from images and videos. It
 </p>
 
 ## Requirement
-Install (yolov5)[https://github.com/ultralytics/yolov5] and download fire dataset.
-
-### Dataset
-The dataset can be download from [here](https://mega.nz/file/MgVhQSoS#kOcuJFezOwU_9F46GZ1KJnX1STNny-tlD5oaJ9Hv0gY). It contains subsamples from Kaggle fire dataset and FireNet datasets.
+Install [yolov5](https://github.com/ultralytics/yolov5) or use the following script and then download [fire dataset](https://mega.nz/file/MgVhQSoS#kOcuJFezOwU_9F46GZ1KJnX1STNny-tlD5oaJ9Hv0gY). The dataset contains subsamples from (Kaggle fire and Smoke](https://www.kaggle.com/dataclusterlabs/fire-and-smoke-dataset) and (Fire and Guns)[https://www.kaggle.com/atulyakumar98/fire-and-gun-dataset] datasets.
 
 
 ### Train
