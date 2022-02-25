@@ -1,5 +1,5 @@
 # Yolov5 for Fire Detection
-In this repo, I trained yolov5 model to identify fire in images/videos. It borrows and modifies the script from [yolov5 repo](https://github.com/ultralytics/yolov5) for training the model on fire dataset. The fire detection task aims to identify fire from a video and put a bounding box around it.
+In this repo, I trained yolov5 model to identify fire in images/videos. The fire detection task aims to identify fire from a video and put a bounding box around it. This repo borrows and modifies [YOLOv5-Custom-Training.ipynb](https://github.com/ultralytics/yolov5) script for training Yolov5 model on fire dataset. 
 
 <p align="center">
   <img src="results/result.gif" />
