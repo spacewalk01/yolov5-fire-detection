@@ -9,6 +9,9 @@ In this repo, I trained yolov5 model to identify fire in images/videos. It borro
 Clone this repo and use the following script to install [yolov5](https://github.com/ultralytics/yolov5). Then download [fire dataset](https://mega.nz/file/MgVhQSoS#kOcuJFezOwU_9F46GZ1KJnX1STNny-tlD5oaJ9Hv0gY) and put it in datasets folder. The dataset contains subsamples from [Kaggle fire & Smoke](https://www.kaggle.com/dataclusterlabs/fire-and-smoke-dataset) and [Fire & Guns](https://www.kaggle.com/atulyakumar98/fire-and-gun-dataset) datasets. I filtered out images and annotations that contain smokes & guns as well as images with low resolution, and then changed fire annotation's label in annotation files.
 
 ```
+# Clone this repo
+git clone https://github.com/spacewalk01/Yolov5-Fire-Detection
+
 # Install yolov5
 git clone https://github.com/ultralytics/yolov5  
 cd yolov5
