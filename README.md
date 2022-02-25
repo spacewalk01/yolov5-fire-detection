@@ -6,7 +6,7 @@ In this repo, I trained yolov5 model to identify fire in images and videos. It b
 </p>
 
 ## Setup
-Clone this repo and use the following script to install [yolov5](https://github.com/ultralytics/yolov5). Then download [fire dataset](https://mega.nz/file/MgVhQSoS#kOcuJFezOwU_9F46GZ1KJnX1STNny-tlD5oaJ9Hv0gY) and put it in datasets folder. The dataset contains subsamples from [Kaggle fire and Smoke](https://www.kaggle.com/dataclusterlabs/fire-and-smoke-dataset) and [Fire and Guns](https://www.kaggle.com/atulyakumar98/fire-and-gun-dataset) datasets. I filtered out images and annotations that contain smokes & guns and then changed fire annotation's label in annotation files. It is also recommended to use as many images of [negative samples](https://github.com/AlexeyAB/darknet) as there are images with objects.
+Clone this repo and use the following script to install [yolov5](https://github.com/ultralytics/yolov5). Then download [fire dataset](https://mega.nz/file/MgVhQSoS#kOcuJFezOwU_9F46GZ1KJnX1STNny-tlD5oaJ9Hv0gY) and put it in datasets folder. The dataset contains subsamples from [Kaggle fire and Smoke](https://www.kaggle.com/dataclusterlabs/fire-and-smoke-dataset) and [Fire and Guns](https://www.kaggle.com/atulyakumar98/fire-and-gun-dataset) datasets. I filtered out images and annotations that contain smokes & guns and then changed fire annotation's label in annotation files.
 
 ```
 # Install yolov5
@@ -30,7 +30,7 @@ python detect.py --source input.mp4 --weights runs\train\exp\weights\best.pt
 | :-: | :-: | :-: |
 | ![](results/P_curve.png) | ![](results/PR_curve.png) | ![](results/R_curve.png) |
 
-I noticed that red emergency light was being detected as fire which makes sense because it is hard to differentiate emergency and fire lights. The current dataset also contains only a few hundreds of negative samples and images with car red light. I presume that we can further improve the performance by adding images with non-labeled objects as negative samples. 
+I noticed that red emergency light was being detected as fire which makes sense because it is hard to differentiate emergency and fire lights. The current dataset also contains only a few hundreds of negative samples and images with car red light. I presume that we can further improve the performance by adding images with non-labeled objects as negative samples. It is also recommended to use as many images of [negative samples](https://github.com/AlexeyAB/darknet) as there are images with objects.
 
 | Ground Truth | 
 | :-: |
