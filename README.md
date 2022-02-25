@@ -28,7 +28,7 @@ python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --c
 ```
 * Visualize feature maps
 ```
-!python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 --source ../datasets/fire/val/images/0.jpg --visualize
+python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 --source ../datasets/fire/val/images/0.jpg --visualize
 ```
 
 ## Result
