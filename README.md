@@ -37,7 +37,7 @@ python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 -
 | :-: | :-: | :-: |
 | ![](results/P_curve.png) | ![](results/PR_curve.png) | ![](results/R_curve.png) |
 
-Note that I observed red emergency light on top of police car was being detected as fire. It might be due to the fact that the training dataset also contains only a few hundreds of negative samples. I presume that we can further improve the performance by adding images with non-labeled fire objects as negative samples. It is also recommended to use as many images of [negative samples](https://github.com/AlexeyAB/darknet) as there are images with objects.
+Note that I observed red emergency light on top of police car was being detected as fire. It might be due to the fact that the training dataset contains only a few hundreds of negative samples. I presume that we can further improve the performance by adding images with non-labeled fire objects as negative samples. It is also recommended to use as many images of [negative samples](https://github.com/AlexeyAB/darknet) as there are images with objects.
 
 #### Prediction Results
 
