@@ -24,7 +24,7 @@ python train.py --img 640 --batch 16 --epochs 3 --data ../fire_config.yaml --wei
 ```
 * Inference
 ```
-python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt
+python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --conf 0.2
 ```
 
 ## Result
