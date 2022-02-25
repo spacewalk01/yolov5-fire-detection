@@ -24,7 +24,7 @@ python detect.py --source input.mp4 --weights E:\Programs\yolov5\runs\train\exp\
 ## Result
 
 | P Curve | PR Curve | R Curve |
-| :-: | :-: | :-: | :-: |
+| :-: | :-: | :-: |
 | ![](results/P_curve.png) | ![](results/PR_curve.png) | ![](results/R_curve.png) |
 
 
