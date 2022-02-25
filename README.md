@@ -15,11 +15,11 @@ cd yolov5
 pip install -r requirements.txt  # install
 ```
 Use train.ipynb or the following commands to train and infer images or videos.
-### Train
+* Train
 ```
 python train.py --img 640 --batch 16 --epochs 3 --data fire_config.yaml --weights yolov5s.pt --workers 0
 ```
-### Inference
+* Inference
 ```
 python detect.py --source input.mp4 --weights runs\train\exp\weights\best.pt
 ```
