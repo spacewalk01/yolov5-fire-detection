@@ -30,6 +30,8 @@ python detect.py --source input.mp4 --weights runs\train\exp\weights\best.pt
 | :-: | :-: | :-: |
 | ![](results/P_curve.png) | ![](results/PR_curve.png) | ![](results/R_curve.png) |
 
+I noticed that red emergency light was being detected as fire which makes sense because the current dataset contains only a few hundreds of negative samples and images with car red light. I assume that we can further improve the performance by adding images with non-labeled objects as negative samples.
+
 | Ground Truth | 
 | :-: |
 | ![](results/val_batch2_labels.jpg) |
