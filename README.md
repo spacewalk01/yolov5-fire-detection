@@ -41,11 +41,10 @@ I noticed that red emergency light on top of police car was being detected as fi
 
 #### Prediction Results
 
-| Ground Truth | 
-| :-: |
-| ![](results/val_batch2_labels.jpg) |
-| **Prediction** | 
-| ![](results/val_batch2_pred.jpg) | 
+| Ground Truth | Prediction | 
+| :-: | :-: |
+| ![](results/val_batch2_labels_1.jpg) | ![](results/val_batch2_pred_1.jpg) |
+| ![](results/val_batch2_labels_2.jpg) | ![](results/val_batch2_pred_2.jpg) | 
 
 #### Feature Map Visualization
 
