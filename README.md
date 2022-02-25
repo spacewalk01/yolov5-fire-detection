@@ -10,7 +10,7 @@ Clone this repo and use the following script to install [yolov5](https://github.
 
 ```
 # Install yolov5
-git clone https://github.com/ultralytics/yolov5  # clone
+git clone https://github.com/ultralytics/yolov5  
 cd yolov5
 pip install -r requirements.txt  # install
 ```
