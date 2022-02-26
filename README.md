@@ -33,7 +33,7 @@ python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --c
 | :-: | :-: | :-: |
 | ![](results/P_curve.png) | ![](results/PR_curve.png) | ![](results/R_curve.png) |
 
-Note that I observed that the trained model tends to predict red emergency light on top of police car as fire. It might be due to the fact that the training dataset contains only a few hundreds of negative samples. I presume that we can further improve the performance of the model by adding images with non-labeled fire objects as negative samples. 
+Note that I observed that the trained model tends to predict red emergency light on top of police car as fire. It might be due to the fact that the training dataset contains only a few hundreds of negative samples. I presume that we can fix this issue and further improve the performance of the model by adding images with non-labeled fire objects as negative samples. 
 
 #### Prediction Results
 
