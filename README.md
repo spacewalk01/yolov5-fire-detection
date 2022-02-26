@@ -33,7 +33,7 @@ python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --c
 | :-: | :-: | :-: |
 | ![](results/P_curve.png) | ![](results/PR_curve.png) | ![](results/R_curve.png) |
 
-Note that I observed red emergency light on top of police car was being detected as fire. It might be due to the fact that the training dataset contains only a few hundreds of negative samples. I presume that we can further improve the performance by adding images with non-labeled fire objects as negative samples. It is also recommended to use as many images of [negative samples](https://github.com/AlexeyAB/darknet) as there are images with objects.
+Note that I observed that the trained model tends to predict red emergency light on top of police car as fire. It might be due to the fact that the training dataset contains only a few hundreds of negative samples. I presume that we can further improve the performance of the model by adding images with non-labeled fire objects as negative samples. 
 
 #### Prediction Results
 
@@ -43,7 +43,7 @@ Note that I observed red emergency light on top of police car was being detected
 | ![](results/val_batch2_labels_2.jpg) | ![](results/val_batch2_pred_2.jpg) | 
 
 #### Feature Map Visualization
-It is desirable to know what happens under the hood of object detection models. It can help us explain how the model produces the output. In Yolov5, we can visualize features in yolov5 using ```--visualize``` argument as follows:
+It is desirable for engineers to know what happens under the hood of object detection models. Visualizing feature maps in deep learning models can help us a little bit understand how they make predictions. In Yolov5, we can visualize features using ```--visualize``` argument as follows:
 
 ```
 python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 --source ../datasets/fire/val/images/0.jpg --visualize
@@ -54,6 +54,6 @@ python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 -
 | ![](results/004dec94c5de631f.jpg) | ![](results/stage23_C3_features.png) |
 
 ## Reference
-I borrowed and modified [YOLOv5-Custom-Training.ipynb](https://github.com/ultralytics/yolov5) script for training Yolov5 model on fire dataset. For more information on training yolov5, please refer to its official homepage.
+I borrowed and modified [YOLOv5-Custom-Training.ipynb](https://github.com/ultralytics/yolov5) script for training Yolov5 model on fire dataset. For more information on training yolov5, please refer to its homepage.
 * https://github.com/robmarkcole/fire-detection-from-images
 * https://github.com/ultralytics/yolov5
