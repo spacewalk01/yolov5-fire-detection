@@ -21,7 +21,7 @@ Use [train.ipynb](train.ipynb) or the following commands for training & inferenc
 
 * Train
 ```
-python train.py --img 640 --batch 16 --epochs 3 --data ../fire_config.yaml --weights yolov5s.pt --workers 0
+python train.py --img 640 --batch 16 --epochs 10 --data ../fire_config.yaml --weights yolov5s.pt --workers 0
 ```
 * Inference
 ```
@@ -29,15 +29,14 @@ python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --c
 ```
 
 ## Result
-I obtained the following results after training yolov5s 10 iterations with 640 image size. 
+The following results were produced after training yolov5s with input size 640x640 on the fire dataset 10 iterations.
 
 | P Curve | PR Curve | R Curve |
 | :-: | :-: | :-: |
 | ![](results/P_curve.png) | ![](results/PR_curve.png) | ![](results/R_curve.png) |
 
-Note that I observed that the trained model tends to predict red emergency light on top of police car as fire. It might be due to the fact that the training dataset contains only a few hundreds of negative samples. I presume that we can fix this issue and further improve the performance of the model by adding images with non-labeled fire objects as negative samples. 
-
 #### Prediction Results
+Note that I observed that the trained model tends to predict red emergency light on top of police car as fire. It might be due to the fact that the training dataset contains only a few hundreds of negative samples. I presume that we can fix this issue and further improve the performance of the model by adding images with non-labeled fire objects as negative samples. 
 
 | Ground Truth | Prediction | 
 | :-: | :-: |
