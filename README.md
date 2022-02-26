@@ -18,6 +18,7 @@ cd yolov5
 pip install -r requirements.txt  # install
 ```
 Use [train.ipynb](train.ipynb) or the following commands for training & inference.
+
 * Train
 ```
 python train.py --img 640 --batch 16 --epochs 3 --data ../fire_config.yaml --weights yolov5s.pt --workers 0
@@ -28,6 +29,7 @@ python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --c
 ```
 
 ## Result
+I obtained the following results after training yolov5s 10 iterations with 640 image size. 
 
 | P Curve | PR Curve | R Curve |
 | :-: | :-: | :-: |
