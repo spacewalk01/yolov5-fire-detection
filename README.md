@@ -43,7 +43,7 @@ Note that I observed that the trained model tends to predict red emergency light
 | ![](results/val_batch2_labels_2.jpg) | ![](results/val_batch2_pred_2.jpg) | 
 
 #### Feature Map Visualization
-It is desirable for engineers to know what happens under the hood of object detection models. Visualizing feature maps in deep learning models can help us a little bit understand how they make predictions. In Yolov5, we can visualize features using ```--visualize``` argument as follows:
+It is desirable for engineers to know what happens under the hood of object detection models. Visualizing features in deep learning models can help us a little bit understand how they make predictions. In Yolov5, we can visualize features using ```--visualize``` argument as follows:
 
 ```
 python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 --source ../datasets/fire/val/images/0.jpg --visualize
