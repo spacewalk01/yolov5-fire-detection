@@ -29,7 +29,7 @@ python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --c
 ```
 
 ## Result
-The following diagrams were produced after training yolov5s with input size 640x640 on the fire dataset 10 iterations. In prediction, the confidence or detection score was set to 0.2.
+The following diagrams were produced after training yolov5s with input size 640x640 on the fire dataset 10 iterations. In this experiment, the confidence or detection threshold was set to 0.2.
 
 | P Curve | PR Curve | R Curve |
 | :-: | :-: | :-: |
