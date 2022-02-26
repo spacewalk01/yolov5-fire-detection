@@ -1,5 +1,5 @@
 # Yolov5 for Fire Detection
-The fire detection task aims to identify fire in a video and put a bounding box around it. This repo includes a demo on how to build a fire detection model using Yolov5. 
+Fire detection task aims to identify fire or flame in a video and put a bounding box around it. This repo includes a demo on how to build a fire detection model using Yolov5. 
 
 <p align="center">
   <img src="results/result.gif" />
@@ -54,6 +54,6 @@ python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 -
 | ![](results/004dec94c5de631f.jpg) | ![](results/stage23_C3_features.png) |
 
 ## Reference
-I borrowed and modified [YOLOv5-Custom-Training.ipynb](https://github.com/ultralytics/yolov5) script for training Yolov5 model on fire dataset. For more information on training yolov5, please refer to its homepage.
+I borrowed and modified [YOLOv5-Custom-Training.ipynb](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) script for training Yolov5 model on fire dataset. For more information on training yolov5, please refer to its homepage.
 * https://github.com/robmarkcole/fire-detection-from-images
 * https://github.com/ultralytics/yolov5
