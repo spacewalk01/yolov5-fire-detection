@@ -6,7 +6,7 @@ Fire detection task aims to identify fire or flame in a video and put a bounding
 </p>
 
 ## Setup
-Clone this repo and use the following script to install [yolov5](https://github.com/ultralytics/yolov5). Then download [this fire dataset](https://mega.nz/file/MgVhQSoS#kOcuJFezOwU_9F46GZ1KJnX1STNny-tlD5oaJ9Hv0gY) I have created for the fire detection task and put it in ```datasets``` folder. The dataset contains samples from both [Kaggle fire & Smoke](https://www.kaggle.com/dataclusterlabs/fire-and-smoke-dataset) and [Fire & Guns](https://www.kaggle.com/atulyakumar98/fire-and-gun-dataset) datasets. I filtered out images and annotations that contain smokes & guns as well as images with low resolution, and then changed fire annotation's label in annotation files.
+Clone this repo and use the following script to install [yolov5](https://github.com/ultralytics/yolov5). Then download [Fire dataset](https://mega.nz/file/MgVhQSoS#kOcuJFezOwU_9F46GZ1KJnX1STNny-tlD5oaJ9Hv0gY) and put it in ```datasets``` folder. This dataset contains samples from both [Kaggle Fire & Smoke](https://www.kaggle.com/dataclusterlabs/fire-and-smoke-dataset) and [Fire & Guns](https://www.kaggle.com/atulyakumar98/fire-and-gun-dataset) datasets. I filtered out images and annotations that contain smokes & guns as well as images with low resolution, and then changed fire annotation's label in annotation files.
 
 ```
 # Clone this repo
