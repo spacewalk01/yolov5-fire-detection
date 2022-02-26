@@ -26,10 +26,6 @@ python train.py --img 640 --batch 16 --epochs 3 --data ../fire_config.yaml --wei
 ```
 python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --conf 0.2
 ```
-* Visualize feature maps
-```
-python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 --source ../datasets/fire/val/images/0.jpg --visualize
-```
 
 ## Result
 
@@ -47,6 +43,11 @@ Note that I observed red emergency light on top of police car was being detected
 | ![](results/val_batch2_labels_2.jpg) | ![](results/val_batch2_pred_2.jpg) | 
 
 #### Feature Map Visualization
+It is desirable to know what happens under the hood of object detection models. It can help us explain how the model produces the output. In Yolov5, we can visualize features in yolov5 using ```--visualize``` argument as follows:
+
+```
+python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 --source ../datasets/fire/val/images/0.jpg --visualize
+```
 
 | Input | Feature Maps | 
 | :-: | :-: |
