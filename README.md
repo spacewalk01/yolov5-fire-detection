@@ -29,7 +29,7 @@ python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --c
 ```
 
 ## Result
-The following diagrams were produced after training YOLOv5s with input size 640x640 on the fire dataset for 10 epochs.
+The following charts were produced after training YOLOv5s with input size 640x640 on the fire dataset for 10 epochs.
 
 | P Curve | PR Curve | R Curve |
 | :-: | :-: | :-: |
