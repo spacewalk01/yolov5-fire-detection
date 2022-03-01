@@ -1,12 +1,12 @@
 # Yolov5 for Fire Detection
-Fire detection task aims to identify fire or flame in a video and put a bounding box around it. This repo includes a demo on how to build a fire detection model using Yolov5. 
+Fire detection task aims to identify fire or flame in a video and put a bounding box around it. This repo includes a demo on how to build a fire detection model using YOLOv5. 
 
 <p align="center">
   <img src="results/result.gif" />
 </p>
 
 ## Setup
-Clone this repo and use the following script to install [yolov5](https://github.com/ultralytics/yolov5). Then download [Fire-Dataset](https://mega.nz/file/MgVhQSoS#kOcuJFezOwU_9F46GZ1KJnX1STNny-tlD5oaJ9Hv0gY) and put it in ```datasets``` folder. This dataset contains samples from both [Kaggle Fire & Smoke](https://www.kaggle.com/dataclusterlabs/fire-and-smoke-dataset) and [Fire & Guns](https://www.kaggle.com/atulyakumar98/fire-and-gun-dataset) datasets. I filtered out images and annotations that contain smokes & guns as well as images with low resolution, and then changed fire annotation's label in annotation files.
+Clone this repo and use the following script to install [YOLOv5](https://github.com/ultralytics/yolov5). Then download [Fire-Dataset](https://mega.nz/file/MgVhQSoS#kOcuJFezOwU_9F46GZ1KJnX1STNny-tlD5oaJ9Hv0gY) and put it in ```datasets``` folder. This dataset contains samples from both [Kaggle Fire & Smoke](https://www.kaggle.com/dataclusterlabs/fire-and-smoke-dataset) and [Fire & Guns](https://www.kaggle.com/atulyakumar98/fire-and-gun-dataset) datasets. I filtered out images and annotations that contain smokes & guns as well as images with low resolution, and then changed fire annotation's label in annotation files.
 
 ```
 # Clone this repo
@@ -29,7 +29,7 @@ python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --c
 ```
 
 ## Result
-The following diagrams were produced after training yolov5s with input size 640x640 on the fire dataset 10 iterations.
+The following diagrams were produced after training YOLOv5s with input size 640x640 on the fire dataset for 10 epochs.
 
 | P Curve | PR Curve | R Curve |
 | :-: | :-: | :-: |
@@ -44,7 +44,7 @@ The fire detection results were fairly good even though the model was trained on
 | ![](results/val_batch2_labels_2.jpg) | ![](results/val_batch2_pred_2.jpg) | 
 
 #### Feature Map Visualization
-It is desirable for engineers to know what happens under the hood of object detection models. Visualizing features in deep learning models can help us a little bit understand how they make predictions. In Yolov5, we can visualize features using ```--visualize``` argument as follows:
+It is desirable for engineers to know what happens under the hood of object detection models. Visualizing features in deep learning models can help us a little bit understand how they make predictions. In YOLOv5, we can visualize features using ```--visualize``` argument as follows:
 
 ```
 python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 --source ../datasets/fire/val/images/0.jpg --visualize
@@ -55,6 +55,6 @@ python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 -
 | ![](results/004dec94c5de631f.jpg) | ![](results/stage23_C3_features.png) |
 
 ## Reference
-I borrowed and modified [YOLOv5-Custom-Training.ipynb](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) script for training Yolov5 model on the fire dataset. For more information on training yolov5, please refer to its homepage.
+I borrowed and modified [YOLOv5-Custom-Training.ipynb](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) script for training YOLOv5 model on the fire dataset. For more information on training YOLOv5, please refer to its homepage.
 * https://github.com/robmarkcole/fire-detection-from-images
 * https://github.com/ultralytics/yolov5
