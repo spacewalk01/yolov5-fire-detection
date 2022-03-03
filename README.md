@@ -5,7 +5,7 @@ Fire detection task aims to identify fire or flame in a video and put a bounding
   <img src="results/result.gif" />
 </p>
 
-## Setup
+## Installation
 Clone this repo and use the following script to install [YOLOv5](https://github.com/ultralytics/yolov5). 
 
 ```
@@ -33,7 +33,7 @@ Or you can download the pretrained [model](https://mega.nz/file/t8kgHZRD#cjlFhQu
 python detect.py --source input.mp4 --weights your_path/best.pt --conf 0.2
 ```
 
-## Result
+## Results
 The following charts were produced after training YOLOv5s with input size 640x640 on the fire dataset for 10 epochs.
 
 | P Curve | PR Curve | R Curve |
