@@ -28,9 +28,9 @@ If you train your own model, use the following command for detection:
 ```
 python detect.py --source input.mp4 --weights runs/train/exp/weights/best.pt --conf 0.2
 ```
-Or you can download the pretrained [model](https://mega.nz/file/t8kgHZRD#cjlFhQu-GkVnsmayxqF98EHpbpC6J6b9fmOJJeDFZNc), use it for detection as follows:
+Or you can use the pretrained model located in ```models``` folder for detection as follows:
 ```
-python detect.py --source input.mp4 --weights your_path/best.pt --conf 0.2
+python detect.py --source input.mp4 --weights models/best.pt --conf 0.2
 ```
 
 ## Results
