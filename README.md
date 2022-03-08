@@ -11,6 +11,7 @@ Clone this repo and use the following script to install [YOLOv5](https://github.
 ```
 # Clone
 git clone https://github.com/spacewalk01/Yolov5-Fire-Detection
+cd Yolov5-Fire-Detection
 
 # Install yolov5
 git clone https://github.com/ultralytics/yolov5  
