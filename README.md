@@ -6,6 +6,8 @@ Fire detection task aims to identify fire or flame in a video and put a bounding
 </p>
 
 <details><summary>Installation</summary>
+    <p>
+      
     Clone this repo and use the following script to install [YOLOv5](https://github.com/ultralytics/yolov5). 
     ```
     # Clone
@@ -17,6 +19,7 @@ Fire detection task aims to identify fire or flame in a video and put a bounding
     cd yolov5
     pip install -r requirements.txt
     ```
+    </p>
 </details>
 
 
