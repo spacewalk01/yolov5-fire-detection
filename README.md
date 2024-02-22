@@ -1,5 +1,5 @@
 # Yolov5 for Fire Detection
-Fire detection task aims to identify fire or flame in a video and put a bounding box around it. This repo includes a demo on how to build a fire detection detector using YOLOv5. 
+Fire detection task aims to identify fire or flame in a video and put a bounding box around it. This repo includes a demo on how to build a fire detector using YOLOv5. 
 
 <p align="center">
   <img src="results/result.gif" />
