@@ -5,7 +5,7 @@ Fire detection task aims to identify fire or flame in a video and put a bounding
   <img src="results/result.gif" />
 </p>
 
-## Installation
+## 🛠️ Installation
 Clone this repo and use the following script to install [YOLOv5](https://github.com/ultralytics/yolov5). 
 ```
 # Clone
@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ```
 
 
-## Training
+## 🏋️ Training
 I set up ```train.ipynb``` script for training the model from scratch. To train the model, download [Fire-Dataset](https://drive.google.com/file/d/1TQKA9nzo0BVwtmojmSusDt5j02KWzIu9/view?usp=sharing) and put it in ```datasets``` folder. This dataset contains samples from both [Fire & Smoke](https://www.kaggle.com/dataclusterlabs/fire-and-smoke-dataset) and [Fire & Guns](https://www.kaggle.com/atulyakumar98/fire-and-gun-dataset) datasets on Kaggle. I filtered out images and annotations that contain smokes & guns as well as images with low resolution, and then changed fire annotation's label in annotation files.
 ```
 python train.py --img 640 --batch 16 --epochs 10 --data ../fire_config.yaml --weights yolov5s.pt --workers 0
@@ -35,7 +35,7 @@ Or you can use the pretrained model located in ```models``` folder for detection
 python detect.py --source ../input.mp4 --weights ../models/best.pt --conf 0.2
 ```
 
-## Results
+## ⏱️Results
 The following charts were produced after training YOLOv5s with input size 640x640 on the fire dataset for 10 epochs.
 
 | P Curve | PR Curve | R Curve |
@@ -61,7 +61,7 @@ python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 -
 | :-: | :-: |
 | ![](results/004dec94c5de631f.jpg) | ![](results/stage23_C3_features.png) |
 
-## Reference
+## 👏 Reference
 I borrowed and modified [YOLOv5-Custom-Training.ipynb](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) script for training YOLOv5 model on the fire dataset. For more information on training YOLOv5, please refer to its homepage.
 * https://github.com/robmarkcole/fire-detection-from-images
 * https://github.com/ultralytics/yolov5
