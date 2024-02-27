@@ -61,7 +61,7 @@ python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.2 -
 | :-: | :-: |
 | ![](results/004dec94c5de631f.jpg) | ![](results/stage23_C3_features.png) |
 
-## 👏 Reference
+## 🔗 Reference
 I borrowed and modified [YOLOv5-Custom-Training.ipynb](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) script for training YOLOv5 model on the fire dataset. For more information on training YOLOv5, please refer to its homepage.
 * https://github.com/robmarkcole/fire-detection-from-images
 * https://github.com/ultralytics/yolov5
