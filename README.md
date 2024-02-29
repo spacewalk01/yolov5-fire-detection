@@ -26,7 +26,7 @@ I set up ```train.ipynb``` script for training the model from scratch. To train 
 python train.py --img 640 --batch 16 --epochs 10 --data ../fire_config.yaml --weights yolov5s.pt --workers 0
 ```
 
-## 🔥 Inference
+## 🌱 Inference
 If you train your own model, use the following command for detection:
 ```
 python detect.py --source ../input.mp4 --weights runs/train/exp/weights/best.pt --conf 0.2
@@ -36,7 +36,7 @@ Or you can use the pretrained model located in ```models``` folder for detection
 python detect.py --source ../input.mp4 --weights ../models/best.pt --conf 0.2
 ```
 
-## ⏱️Results
+## ⏱️ Results
 The following charts were produced after training YOLOv5s with input size 640x640 on the fire dataset for 10 epochs.
 
 | P Curve | PR Curve | R Curve |
