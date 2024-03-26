@@ -42,6 +42,9 @@ python train_dual.py --workers 4 --device 0 --batch 16 --data ../fire.yaml --img
 ```
 
 ## 🌱 Inference
+
+- YOLOv5
+  
 If you train your own model, use the following command for detection:
 ```
 python detect.py --source ../input.mp4 --weights runs/train/exp/weights/best.pt --conf 0.2
@@ -49,6 +52,12 @@ python detect.py --source ../input.mp4 --weights runs/train/exp/weights/best.pt 
 Or you can use the pretrained model located in ```models``` folder for detection as follows:
 ```
 python detect.py --source ../input.mp4 --weights ../models/best.pt --conf 0.2
+```
+
+- YOLOv9
+
+```
+python detect.py --weights runs/yolov9-c/weights/best.pt --source ../input.mp4
 ```
 
 ## ⏱️ Results
