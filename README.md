@@ -60,6 +60,8 @@ python detect.py --source ../input.mp4 --weights ../models/best.pt --conf 0.2
 python detect.py --weights runs/yolov9-c/weights/best.pt --source ../input.mp4
 ```
 
+You can download the pretrained yolov9-c.pt model from [google drive]() for fire detection. Note that this model was trained on the fire dataset for 50 epochs.
+
 ## ⏱️ Results
 The following charts were produced after training YOLOv5s with input size 640x640 on the fire dataset for 10 epochs.
 
