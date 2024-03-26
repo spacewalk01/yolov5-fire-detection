@@ -51,7 +51,7 @@ python detect.py --source ../input.mp4 --weights runs/train/exp/weights/best.pt 
 ```
 Or you can use the pretrained model located in ```models``` folder for detection as follows:
 ```
-python detect.py --source ../input.mp4 --weights ../models/best.pt --conf 0.2
+python detect.py --source ../input.mp4 --weights ../models/yolov5s_best.pt --conf 0.2
 ```
 
 - YOLOv9
