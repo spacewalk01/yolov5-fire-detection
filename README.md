@@ -1,29 +1,44 @@
-<h1 align="center"><span>YOLOv5 for Fire Detection</span></h1>
+<h1 align="center"><span>YOLOv5/YOLOv9 for Fire Detection</span></h1>
 
-Fire detection task aims to identify fire or flame in a video and put a bounding box around it. This repo includes a demo on how to build a fire detector using YOLOv5. 
+Fire detection task aims to identify fire or flame in a video and put a bounding box around it. This repo includes a demo on how to build a fire detector using YOLOv5/YOLOv9. 
 
 <p align="center">
   <img src="results/result.gif" />
 </p>
 
 ## 🛠️ Installation
-Clone this repo and use the following script to install [YOLOv5](https://github.com/ultralytics/yolov5). 
-```
+1. Clone this repo and use the following script to install [YOLOv5](https://github.com/ultralytics/yolov5). 
+``` shell
 # Clone
 git clone https://github.com/spacewalk01/Yolov5-Fire-Detection
 cd Yolov5-Fire-Detection
+```
 
-# Install yolov5
-git clone https://github.com/ultralytics/yolov5  
+2. Install yolov5
+``` shell
+git clone https://github.com/ultralytics/yolov5.git 
 cd yolov5
 pip install -r requirements.txt
 ```
 
+3. Or install yolov9
+``` shell
+git clone https://github.com/WongKinYiu/yolov9.git
+cd yolov9
+pip install -r requirements.txt
+```
 
 ## 🏋️ Training
 I set up ```train.ipynb``` script for training the model from scratch. To train the model, download [Fire-Dataset](https://drive.google.com/file/d/1TQKA9nzo0BVwtmojmSusDt5j02KWzIu9/view?usp=sharing) and put it in ```datasets``` folder. This dataset contains samples from both [Fire & Smoke](https://www.kaggle.com/dataclusterlabs/fire-and-smoke-dataset) and [Fire & Guns](https://www.kaggle.com/atulyakumar98/fire-and-gun-dataset) datasets on Kaggle. I filtered out images and annotations that contain smokes & guns as well as images with low resolution, and then changed fire annotation's label in annotation files.
+
+### YOLOv5
 ```
-python train.py --img 640 --batch 16 --epochs 10 --data ../fire_config.yaml --weights yolov5s.pt --workers 0
+python train.py --img 640 --batch 16 --epochs 10 --data ../fire.yaml --weights yolov5s.pt --workers 0
+```
+
+### YOLOv9
+```
+python train_dual.py --workers 4 --device 0 --batch 16 --data ../fire.yaml --img 640 --cfg models/detect/yolov9-c.yaml --weights '' --name yolov9-c --hyp hyp.scratch-high.yaml --min-items 0 --epochs 50 --close-mosaic 15
 ```
 
 ## 🌱 Inference
