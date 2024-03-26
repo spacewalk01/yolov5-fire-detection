@@ -10,7 +10,7 @@ Fire detection task aims to identify fire or flame in a video and put a bounding
 1. Clone this repo 
 ``` shell
 # Clone
-git clone https://github.com/spacewalk01/Yolov5-Fire-Detection
+git clone https://github.com/spacewalk01/yolov5-fire-detection.git
 cd Yolov5-Fire-Detection
 ```
 
