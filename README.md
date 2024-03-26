@@ -21,7 +21,7 @@ cd yolov5
 pip install -r requirements.txt
 ```
 
-3. Or install yolov9
+3. Or install [YOLOv9](https://github.com/WongKinYiu/yolov9.git)
 ``` shell
 git clone https://github.com/WongKinYiu/yolov9.git
 cd yolov9
