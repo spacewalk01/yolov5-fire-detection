@@ -46,21 +46,21 @@ python train_dual.py --workers 4 --device 0 --batch 16 --data ../fire.yaml --img
 - YOLOv5
   
 If you train your own model, use the following command for detection:
-```
+``` shell
 python detect.py --source ../input.mp4 --weights runs/train/exp/weights/best.pt --conf 0.2
 ```
 Or you can use the pretrained model located in ```models``` folder for detection as follows:
-```
+``` shell
 python detect.py --source ../input.mp4 --weights ../models/yolov5s_best.pt --conf 0.2
 ```
 
 - YOLOv9
 
-```
-python detect.py --weights runs/yolov9-c/weights/best.pt --source ../input.mp4
+``` shell
+python detect.py --weights runs/train/yolov9-c2/weights/best.pt --source ../input.mp4
 ```
 
-You can download the pretrained yolov9-c.pt model from [google drive]() for fire detection. Note that this model was trained on the fire dataset for 50 epochs.
+You can download the pretrained yolov9-c.pt model from [google drive](https://drive.google.com/file/d/1nV5C3dbc_Q3CoczHaERTojr78-SFPdMI/view?usp=sharing) for fire detection. Note that this model was trained on the fire dataset for 50 epochs. Fix for detect.py error [link](https://github.com/WongKinYiu/yolov9/issues/162).
 
 ## ⏱️ Results
 The following charts were produced after training YOLOv5s with input size 640x640 on the fire dataset for 10 epochs.
