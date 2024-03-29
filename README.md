@@ -60,7 +60,7 @@ python detect.py --source ../input.mp4 --weights ../models/yolov5s_best.pt --con
 python detect.py --weights runs/train/yolov9-c2/weights/best.pt --source ../input.mp4
 ```
 
-You can download the pretrained yolov9-c.pt model from [google drive](https://drive.google.com/file/d/1nV5C3dbc_Q3CoczHaERTojr78-SFPdMI/view?usp=sharing) for fire detection. Note that this model was trained on the fire dataset for 50 epochs. Fix for detect.py error [link](https://github.com/WongKinYiu/yolov9/issues/162).
+You can download the pretrained yolov9-c.pt model from [google drive](https://drive.google.com/file/d/1nV5C3dbc_Q3CoczHaERTojr78-SFPdMI/view?usp=sharing) for fire detection. Note that this model was trained on the fire dataset for 50 epochs. Refer to [link](https://github.com/WongKinYiu/yolov9/issues/162) to fix for detect.py runtime error.
 
 ## ⏱️ Results
 The following charts were produced after training YOLOv5s with input size 640x640 on the fire dataset for 10 epochs.
