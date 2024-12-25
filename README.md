@@ -47,7 +47,7 @@ python train_dual.py --workers 4 --device 0 --batch 16 --data ../fire.yaml --img
   
 If you train your own model, use the following command for detection:
 ``` shell
-python detect.py --source ../input.mp4 --weights runs/train/exp/weights/best.pt --conf 0.2
+python detect.py --source ../input.mp4 --weights runs/train/exp2/weights/best.pt --conf 0.2
 ```
 Or you can use the pretrained model located in ```models``` folder for detection as follows:
 ``` shell
